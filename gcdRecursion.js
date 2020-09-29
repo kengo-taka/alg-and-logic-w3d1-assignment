@@ -2,5 +2,11 @@
 //using recursion. 
 
 const gcdRecursive = function(a, b) {
+    if (!b) {
+      return a;
+    } else {
+      return gcdRecursive(b,a % b );
+    }
+    }
     
-}        
+    console.log(gcdRecursive(12,15))
